@@ -1,4 +1,6 @@
+# Find array union of two arrays
 def union_of_arrays(arr1, arr2):
+     # let's sort both arrays
     arr1.sort()
     arr2.sort()
 
@@ -6,7 +8,7 @@ def union_of_arrays(arr1, arr2):
     firstelement = 0
     secondelement  = 0
     union = []
-
+    # check the no. lesser than or not 
     while firstelement < len(arr1) and secondelement < len(arr2):
         if arr1[firstelement] < arr2[secondelement]:
             firstelement += 1
